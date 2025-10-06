@@ -24,10 +24,16 @@
 /*       */
 
 
-/* hide scrollbar */
+/*                */
 html { scrollbar-width: none; } /* Firefox */
 body { -ms-overflow-style: none; } /* IE and Edge */
 body::-webkit-scrollbar, body::-webkit-scrollbar-button { display: none; } /* Chrome */
+
+::selection {
+  background-color: #000000;
+  color: #FF00FF;
+}
+
 /*                */
 
 
@@ -128,6 +134,11 @@ header a:hover {
 
 .comm {
     width: 60%;
+}
+
+.no {
+    background-image: url(assets/static.gif);
+    background-color: #000000;
 }
 
 .wrapper {
