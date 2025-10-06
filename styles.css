@@ -112,7 +112,7 @@ header {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     border-bottom: magenta 2px solid;
-    background-image: url(assets/static.gif);
+    background-image: url(assets/ripple.gif);
         
     text-shadow: 1px 1px cyan, 
                 -1px 1px yellow, 
@@ -151,6 +151,17 @@ header a:hover {
 
 .home {
     justify-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    align-items: center;
+    padding: 15px;
+    
+    border: magenta 2px solid;
+    background-image: url(assets/static.gif);
+    
+    display: flex;
+    overflow: scroll;
 }
 
 .term {
