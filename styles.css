@@ -33,12 +33,13 @@ body::-webkit-scrollbar, body::-webkit-scrollbar-button { display: none; } /* Ch
 
 
 /* background */
-body {
+html, body {
     background-image: url(assets/hazeflow.gif);
     background-color: BLACK;
     background: linear-gradient();
     
     font-family: SpaceMono;
+    min-height: 100%;
 }
 
 .overlay {
@@ -72,11 +73,11 @@ h1 {
 footer {
     position: absolute;
     bottom: 0%;
-    background-color: aqua;
+    width: 100%;
+    height: 100px;
     background-image: url(assets/inv-silly.gif);
-    background-repeat: repeat-y;
+    background-size: contain; 
     white-space: nowrap;
-    height: 150px;
 }
 
 header {
