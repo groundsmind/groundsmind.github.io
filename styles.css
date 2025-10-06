@@ -59,6 +59,13 @@ html, body {
 }
 /*            */
 
+.colorful {
+    text-shadow: 1px 1px cyan, 
+                -1px 1px yellow, 
+                1px -1px magenta, 
+                -1px -1px magenta;
+}
+
 .current {
     color: white;
     text-shadow: 1px 1px cyan, 
@@ -112,28 +119,40 @@ header a:hover {
     font-size: large;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+.term {
+    flex-direction: column;
+}
+
+.comm {
+    display: flex;
+    overflow: scroll;
+}
+
+.galerry{
+    flex-flow: column;
+}
+
+.container div {
+    margin: 10px;
+}
+
 .box {
     align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 75%;
-    
+    width: 80%;
     padding: 15px;
     
     border: magenta 2px solid;
     background-image: url(assets/static.gif);
     
-    text-shadow: 1px 1px cyan, 
-                -1px 1px yellow, 
-                1px -1px magenta, 
-                -1px -1px magenta;
-}
-
-.comm {
-    width: 60%;
+    display: flex;
+    overflow: scroll;
 }
 
 .no {
@@ -141,24 +160,10 @@ header a:hover {
     background-color: #000000;
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-}
-
-.wrapper > * {
-    max-width:fit-content;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .caroussel {
     height: 300px;
     overflow: hidden;
-    border: #ff0088 5px solid;
+    justify-items: center;
 }
 
 .imgContainer {
