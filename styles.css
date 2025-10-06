@@ -33,8 +33,6 @@
 
 
 /*                */
-html { scrollbar-width: none; } /* Firefox */
-body { -ms-overflow-style: none; } /* IE and Edge */
 body::-webkit-scrollbar, body::-webkit-scrollbar-button { display: none; } /* Chrome */
 ::selection {
   background-color: #000000;
@@ -46,6 +44,8 @@ body::-webkit-scrollbar, body::-webkit-scrollbar-button { display: none; } /* Ch
 
 /* background */
 html, body {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     background-image: url(assets/hazeflow.gif);
     background-color: BLACK;
     background: linear-gradient();
