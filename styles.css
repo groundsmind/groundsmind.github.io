@@ -36,12 +36,10 @@
 html { scrollbar-width: none; } /* Firefox */
 body { -ms-overflow-style: none; } /* IE and Edge */
 body::-webkit-scrollbar, body::-webkit-scrollbar-button { display: none; } /* Chrome */
-
 ::selection {
   background-color: #000000;
   color: #FF00FF;
 }
-
 /*                */
 
 
@@ -135,6 +133,11 @@ header a:hover {
 }
 /*              */
 
+a:hover {
+    color: magenta;
+    transition: 0.3s;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -173,19 +176,8 @@ header a:hover {
     overflow: scroll;
 }
 
-.soc {
-    text-align: center;
-}
-
 .container div {
     margin: 10px;
-}
-
-.artsy {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
 
 .box {
@@ -206,7 +198,12 @@ header a:hover {
 
 .no {
     background-image: url(assets/static.gif);
-    background-color: #000000;
+    background-color: black;
+}
+
+.galerry {
+    flex-direction: column;
+    width: 100%;
 }
 
 .caroussel {
@@ -217,12 +214,12 @@ header a:hover {
 
 .imgContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: 300px;
     width: 300px;
     white-space: nowrap;
     animation-name: scroll;
-    animation-duration: 20s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -233,29 +230,12 @@ header a:hover {
 
 @keyframes scroll {
     0% {
-        transform: translateY(0);
+        transform: translateX(0);
     }
     
     100% {
-        transform: translateY(-509%);
+        transform: translateX(-500%);
     }
 }
 
 /*               */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
