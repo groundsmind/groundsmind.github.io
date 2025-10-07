@@ -228,6 +228,13 @@ a:hover {
     height: 300px;
 }
 
+.vemp {
+    float: right;
+    background-color: black;
+    color: white;
+    text-shadow: none;
+}
+
 @keyframes scroll {
     0% {
         transform: translateX(0);
